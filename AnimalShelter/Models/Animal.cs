@@ -11,13 +11,3 @@ namespace AnimalShelter.Models
     public DateTime DateOfAdmittance { get; set; }
   }
 }
-
-
-
-// type
-// breed
-// name
-// age
-// gender
-// date_of_admittance
-    
