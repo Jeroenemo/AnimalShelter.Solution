@@ -6,6 +6,6 @@ namespace AnimalShelter.Models
   {
     public DbSet<Animal> Animals { get; set; }
 
-    public AnimalShelterContext(DbContextOptions options)
+    public AnimalShelterContext(DbContextOptions options) : base(options) { }
   }
 }
