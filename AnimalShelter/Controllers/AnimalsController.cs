@@ -5,7 +5,7 @@ using AnimalShelter.Models;
 
 namespace AnimalShelter.Controllers
 {
-  public class AnimalsController : Controllers
+  public class AnimalsController : Controller
   {
     private readonly AnimalShelterContext _db;
 
@@ -31,7 +31,7 @@ namespace AnimalShelter.Controllers
     public ActionResult Details (int id)
     {
       Animal thisAnimal = _db.Animals.FirstOrDefault(animal => animal.AnimalId == id );
-      return View(thisItem);
+      return View(thisAnimal);
     }
   }
 }
