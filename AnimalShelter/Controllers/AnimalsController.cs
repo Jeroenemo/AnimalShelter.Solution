@@ -19,7 +19,10 @@ namespace AnimalShelter.Controllers
       List<Animal> model = _db.Animals.ToList();
       return View(model);
     }
-
+    public ActionResult Create()
+    {
+      return View();
+    }
     [HttpPost]
     public ActionResult Create(Animal animal)
     {
